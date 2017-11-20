@@ -11,14 +11,14 @@ namespace GSharp.Modules.Sort
 {
     public class ArraySort : GModule
     {
-        [GCommand("{0} 사전식 정렬")]
-        public static void SortArray(string[] arr)
+        [GCommand("{0} 배열 순서대로 정렬")]
+        public static void SortArray(Array arr)
         {
             Array.Sort(arr);
         }
 
-        [GCommand("{0} 배열 사전식 역순으로 정렬")]
-        public static void ReverseArray(string[] arr)
+        [GCommand("{0} 배열 역순으로 정렬")]
+        public static void ReverseArray(Array arr)
         {
             Array.Sort(arr);
             Array.Reverse(arr);
